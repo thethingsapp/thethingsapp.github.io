@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Things App - 開發者作品集</title>
+    <style>
+        :root {
+            --primary: #006b7d;
+            --secondary: #00a3ad;
+            --accent: #7fd1d9;
+            --light: #c1e6eb;
+            --white: #f5fbfc;
+            --bg: #eaf6f8;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--primary);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--light);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            font-weight: 300;
+        }
+        
+        .app-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--light);
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 163, 173, 0.15);
+        }
+        
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .app-name {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        .app-description {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .app-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .app-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            flex-grow: 1;
+            text-align: center;
+            min-width: 120px;
+        }
+        
+        .app-link.ios {
+            background-color: #007aff;
+        }
+        
+        .app-link.android {
+            background-color: #3ddc84;
+        }
+        
+        .app-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .app-link.ios:hover {
+            background-color: #0062c4;
+        }
+        
+        .app-link.android:hover {
+            background-color: #2bbd6e;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--light);
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .app-icon {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Things App</h1>
+            <p class="subtitle">簡約設計 · 免費APP · 清新體驗</p>
+        </header>
+        
+        <main>
+            <!-- 支票易 APP -->
+            <div class="app-card">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/25/87/8e/25878eb9-af23-7c41-23c8-91c56e84cc59/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/460x0w.webp" alt="支票易 Cheque Easy" class="app-icon">
+                <h2 class="app-name">支票易 Cheque Easy</h2>
+                <p class="app-description">您的智能支票填寫助手，簡化支票填寫流程，避免書寫錯誤，提供專業支票範本和自動計算功能。</p>
+                <div class="app-links">
+                    <a href="https://apps.apple.com/hk/app/%E6%94%AF%E7%A5%A8%E6%98%93-cheque-easy/id6746353372" class="app-link ios">App Store</a>
+                    <a href="#" class="app-link android">Google Play</a>
+                </div>
+            </div>
+            
+            <!-- 預留新APP位置 1 -->
+            <div class="app-card">
+                <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/tile-topic-billing_2x.svg" alt="即將推出" class="app-icon">
+                <h2 class="app-name">即將推出的應用</h2>
+                <p class="app-description">我們正在開發更多實用工具，敬請期待！</p>
+                <div class="app-links">
+                    <a href="mailto:thethingsapp@gmail.com" class="app-link">聯繫我們</a>
+                </div>
+            </div>
+            
+            <!-- 預留新APP位置 2 -->
+            <div class="app-card">
+                <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_navicons/tile-topic-password_2x.svg" alt="新項目" class="app-icon">
+                <h2 class="app-name">新項目籌備中</h2>
+                <p class="app-description">為您的生活和工作帶來更多便利的解決方案。</p>
+                <div class="app-links">
+                    <a href="mailto:thethingsapp@gmail.com" class="app-link">提供建議</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 The Things App · 所有權利保留</p>
+            <p>聯繫方式: <a href="mailto:thethingsapp@gmail.com" style="color: var(--secondary);">thethingsapp@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
